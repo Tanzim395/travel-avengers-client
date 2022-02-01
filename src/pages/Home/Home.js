@@ -53,7 +53,7 @@ const Home = () => {
       <div className="container">
         <div className="row g-4">
           <div className="col-12 col-md-9">
-            <h1 className="text-center my-5">Travel Experiences</h1>
+            <h1 className="text-center my-5">Blog Collections</h1>
             {isBlogsLoading ? (
               <Loading />
             ) : (
@@ -68,7 +68,7 @@ const Home = () => {
             )}
           </div>
           <div className="col-12 col-md-3">
-            <h4 className="my-5">Top Rated Experiences</h4>
+            <h4 className="my-5">Featured Vlogs</h4>
             {topBlogs.map((blog) => (
               <TopBlogCard key={blog._id} {...blog} />
             ))}

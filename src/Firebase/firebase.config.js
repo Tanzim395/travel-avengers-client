@@ -1,10 +1,11 @@
+console.log(process.env);
 const firebaseConfig = {
-  apiKey: "AIzaSyD-iUmt9e0YTYp-MDW_lnWNuuLex0fAi-k",
-  authDomain: "travel-avengers.firebaseapp.com",
-  projectId: "travel-avengers",
-  storageBucket: "travel-avengers.appspot.com",
-  messagingSenderId: "507920948420",
-  appId: "1:507920948420:web:51c207e0d34681bf6dbd91"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 export default firebaseConfig;

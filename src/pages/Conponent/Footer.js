@@ -1,46 +1,62 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import logo from "./../../assets/images/title-lg.png";
+import React from 'react';
+import './Footer.css';
+import { HashLink } from 'react-router-hash-link';
+
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#ccc" }} className="">
-      <div className="footer-top container my-4 py-4">
-        <div className="row">
-          <div className="col-6">
-            <div className="logo">
-              <Link to="/">
-                <img src={logo} alt="" className="footer_logo" />
-              </Link>
+    <div>
+      <footer className="">
+        <div className="footer-top">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-3 col-sm-6">
+                <div className="address">
+                  <h3>Travel Avengers</h3>
+                  <p className="mb-4 mt-4">
+                    Farmgate,Dhaka-1212, Bangladesh                                   </p>
+                  <p><strong>Phone:</strong> 01 333 666 980 (10AM-5PM)</p>
+                  <p><strong>Email:</strong> info@travelavengers.com</p>
+                </div>
+              </div>
+
+              {/* // */}
+
+              <div className="col-lg-3 col-sm-6 footer-menus">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i className="fas fa-check"></i> <HashLink as={HashLink} to="/home#allPackages">Blog</HashLink></li>
+                  <li><i className="fas fa-check"></i> <HashLink as={HashLink} to="/home#allPackages">Action Camera</HashLink></li>
+                  <li><i className="fas fa-check"></i> <HashLink as={HashLink} to="/home#allPackages">Cuisine</HashLink></li>
+                  <li><i className="fas fa-check"></i> <HashLink as={HashLink} to="/home#allPackages">Travel Insurance</HashLink></li>
+                  <li><i className="fas fa-check"></i> <HashLink as={HashLink} to="/home#allPackages">And More...</HashLink></li>
+                </ul>
+              </div>
+
+              <div className="col-lg-4 col-sm-6 newsletter">
+                <h4>Our Newsletter</h4>
+                <p className='text-white'>Subscribe to our newsletter to receive latest updates</p>
+                <form action="" method=""><input type="email" name="email" /><input type="submit" value="Subscribe" /></form>
+
+
+              </div>
             </div>
           </div>
-          <div className="col-6">
-            <p className="mb-1">Subscribe now to get daily updates</p>
-            <form>
-              <div className="input-group mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Email Address..."
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <button
-                  className="btn btn-outline-secondary"
-                  type="button"
-                  id="button-addon2"
-                >
-                  Subscribe
-                </button>
+        </div>
+
+        <div className="footer-bottom border-top text-center">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <p className='text-white'>
+                  Copyright &copy; <span id="currentYear"></span> Travel Avewngers | A Travel Blog Website
+                </p>
               </div>
-            </form>
+            </div>
           </div>
         </div>
-      </div>
-      <p className="text-center p-2 bg-dark text-white">
-        Copyright &copy; 2022 all rights reserved by Travel Avengers
-      </p>
-    </footer>
+      </footer>
+    </div>
   );
 };
 

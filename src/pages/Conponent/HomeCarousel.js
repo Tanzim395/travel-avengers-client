@@ -1,7 +1,7 @@
 import React from "react";
-import imgOne from "./../../assets/images/1.jpg";
-import imgTwo from "./../../assets/images/2.jpg";
-import imgThree from "./../../assets/images/3.jpg";
+import imgOne from "./../../assets/images/Amazon-Rain-Forest.jpg";
+import imgTwo from "./../../assets/images/1200px-Sundarban_Tiger.jpg";
+import imgThree from "./../../assets/images/hawaiiisland.jpg";
 
 const HomeCarousel = () => {
   return (
@@ -18,8 +18,7 @@ const HomeCarousel = () => {
               <div className="h-100">
                 <div className="item_text_wrapper  p-3 ">
                   <h4 className="text-light">
-                    “A journey of a thousand miles begins with a single step” –
-                    Lao Tzu
+                    “Welcome to the empire of travellers”
                   </h4>
                 </div>
               </div>
@@ -31,8 +30,7 @@ const HomeCarousel = () => {
               <div className="h-100">
                 <div className="item_text_wrapper p-3">
                   <h4 className="text-light">
-                    “Do not follow where the path may lead. Go instead where
-                    there is no path and leave a trail” – Ralph Waldo Emerson
+                    “Exploring the world is like investing on your life”
                   </h4>
                 </div>
               </div>
@@ -44,8 +42,7 @@ const HomeCarousel = () => {
               <div className="h-100">
                 <div className="item_text_wrapper p-3">
                   <h4 className="text-light">
-                    “I am not the same, having seen the moon shine on the other
-                    side of the world” – Mary Anne Radmacher
+                    “Travel makes your taste better”
                   </h4>
                 </div>
               </div>
